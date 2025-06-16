@@ -6,13 +6,41 @@
 
 
 @layer base {
+
+    /* Tailwind CSS does not provide utilities for customizing scrollbars directly.
+        You need to use custom CSS for scrollbar styling, as shown below.
+        Optionally, you can use a plugin like 'tailwind-scrollbar' for utility classes.
+    */
+
+    /* For Webkit browsers (e.g., Chrome, Edge, Safari) */
+    ::-webkit-scrollbar {
+        @apply w-2;
+        /* width: 12px; */
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-gray-100;
+        /* background: #f1f1f1; border-radius: 10px; */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-gray-300 border-2 border-gray-100;
+        /* background: #888; border-radius: 10px; border: 2px solid #f1f1f1; */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-green-700;
+        /* background: #555; */
+    }
+
+
     body {
         @apply font-sans;
         font-family: 'Roboto', sans-serif;
     }
 
     .nav-links {
-        @apply text-green-900 hover:text-green-500;
+        @apply text-green-900 hover:text-green-500 inline-block text-center;
     }
 
     #nprogress .bar {
@@ -29,6 +57,7 @@
         text-shadow: 1px 1px 2px yellow;
         -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
     }
+
 
     .service-card {
         @apply bg-white shadow-md rounded-lg p-4 grow-1 text-center hover:transform hover:scale-105 transition-transform duration-300;
@@ -52,6 +81,38 @@
         text-decoration: none;
         animation: popInFromBelow 0.5s ease-out forwards;
     }
+
+
+    .principle-container {
+        @apply bg-white rounded-lg flex md:flex-row flex-wrap w-full shadow-md p-2 sm:flex-col;
+        animation: popInFromBelow 0.5s ease-out forwards;
+    }
+
+    .principle-container div {
+        @apply bg-white p-4 text-center grow-1 lg:max-w-lg;
+        animation: popInFromBelow 0.5s ease-out forwards;
+    }
+
+    .principle-container div img {
+        @apply w-16 h-16 mx-auto my-2;
+        animation: popInFromBelow 0.5s ease-out forwards;
+    }
+
+    .principle-container div h2 {
+        @apply text-green-900 font-semibold uppercase text-base;
+        animation: popInFromBelow 0.5s ease-out forwards;
+    }
+
+    .principle-container div p {
+        @apply text-gray-700 text-sm text-center;
+        animation: popInFromBelow 0.5s ease-out forwards;
+    }
+
+
+
+
+
+
 
 
     @keyframes popInFromBelow {
