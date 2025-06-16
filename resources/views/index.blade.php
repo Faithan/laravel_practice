@@ -14,7 +14,7 @@
 
     <body class="bg-gray-100">
 
-        
+
         <!-- Hero Section -->
         <section class="container mx-auto px-4 py-16 text-center  ">
             <h1 class="text-3xl md:text-5xl font-bold text-green-700 mb-2 pop-in">SERVIAMUS FOUNDATION INCORPORATED</h1>
@@ -29,10 +29,11 @@
             <h2 class="text-2xl text-green-700 font-semibold italic pop-in">SINCE 1997</h2>
             <a href="#"
                 class="inline-block mt-10 bg-green-800 text-white px-3 py-3 rounded-full font-semibold hover:bg-green-700 transition pop-in">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-circle-chevron-down"></i>
                 Learn More</a>
 
-            <p class="text-justify mt-10 text-gray-600 pop-in"><b>SERVIAMUS FOUNDATION INCORPORATED</b> is a Diocesan microfinance
+            <p class="text-justify mt-10 text-gray-600 pop-in"><b>SERVIAMUS FOUNDATION INCORPORATED</b> is a Diocesan
+                microfinance
                 foundation focusing on providing financial
                 assistance to it's recognized members. It aims to make formal credit available to women and other
                 micro-entrepreneurs to help them start or expand their business activities and increase their income. It
@@ -61,23 +62,50 @@
                 <div class="service-card pop-in">
                     <label for="">Community Development Program</label>
                     <img src="{{asset('system_img/icons/projects.png')}}" alt="">
-                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Read More</a>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Read More</a>
                 </div>
                 <div class="service-card pop-in">
                     <label for="">SCHOLARSHIP PROGRAM</label>
                     <img src="{{asset('system_img/icons/diploma.png')}}" alt="">
-                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Read More</a>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Read More</a>
                 </div>
                 <div class="service-card pop-in">
                     <label for="">CREDIT SERVICES</label>
                     <img src="{{asset('system_img/icons/credit-union.png')}}" alt="">
-                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Read More</a>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Read More</a>
                 </div>
 
             </div>
         </section>
 
-      
+        <section class="container mx-auto px-4 py-4">
+            <div class="principle-container">
+                <div class="">
+                    <img src="{{asset('system_img/icons/leadership.png')}}" alt="">
+                    <h2>MISSION</h2>
+                    <p>We are a Diocesan service oriented institution committed towards building a proactive, empowered and
+                        God-centered communities.</p>
+                </div>
+                <div class="xl:border-r  md:border-0   xl:border-l xl:border-green-400">
+                    <img src="{{asset('system_img/icons/opportunity.png')}}" alt="">
+                    <h2>VISION</h2>
+                    <p>We serve and empower people to manage their own resources.
+                    </p>
+                </div>
+                <div class="">
+                    <img src="{{asset('system_img/icons/core-value.png')}}" alt="">
+                    <h2>CORE VALUES</h2>
+                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Service </p>
+                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Teamwork </p>
+                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Respect </p>
+                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Integrity </p>
+                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Trust </p>
+                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Stewardship</p>
+                </div>
+            </div>
+        </section>
+
+
     </body>
 
     </html>
