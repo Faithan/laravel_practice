@@ -86,7 +86,7 @@
                     <p>We are a Diocesan service oriented institution committed towards building a proactive, empowered and
                         God-centered communities.</p>
                 </div>
-                <div class="xl:border-r  md:border-0   xl:border-l xl:border-green-400">
+                <div class="xl:border-r  md:border-0   xl:border-l xl:border-gray-200">
                     <img src="{{asset('system_img/icons/opportunity.png')}}" alt="">
                     <h2>VISION</h2>
                     <p>We serve and empower people to manage their own resources.
@@ -95,12 +95,12 @@
                 <div class="">
                     <img src="{{asset('system_img/icons/core-value.png')}}" alt="">
                     <h2>CORE VALUES</h2>
-                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Service </p>
-                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Teamwork </p>
-                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Respect </p>
-                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Integrity </p>
-                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Trust </p>
-                    <p><i class="fa-solid fa-check text-green-700 mr-2"></i> Stewardship</p>
+                    <p><i class="fa-solid fa-hand-holding-heart text-green-700 mr-2"></i> Service </p>
+                    <p><i class="fa-solid fa-people-group text-green-700 mr-2"></i> Teamwork </p>
+                    <p><i class="fa-solid fa-handshake-angle text-green-700 mr-2"></i> Respect </p>
+                    <p><i class="fa-solid fa-scale-balanced text-green-700 mr-2"></i> Integrity </p>
+                    <p><i class="fa-solid fa-hand-holding-hand text-green-700 mr-2"></i> Trust </p>
+                    <p><i class="fa-solid fa-seedling text-green-700 mr-2"></i> Stewardship</p>
                 </div>
             </div>
         </section>
