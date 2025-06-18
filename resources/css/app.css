@@ -4,6 +4,9 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
+@custom-variant dark (&:where(.dark, .dark *));
+/* Enables class-based dark mode support */
+
 
 @layer base {
 
@@ -14,13 +17,19 @@
 
     /* For Webkit browsers (e.g., Chrome, Edge, Safari) */
     ::-webkit-scrollbar {
-        @apply w-2;
+        @apply w-1;
         /* width: 12px; */
     }
 
+ 
+
     ::-webkit-scrollbar-track {
-        @apply bg-gray-100;
+        @apply bg-gray-100 dark:bg-gray-900;
         /* background: #f1f1f1; border-radius: 10px; */
+    }
+
+    .dark ::-webkit-scrollbar-track {
+        background: #111827;
     }
 
     ::-webkit-scrollbar-thumb {
@@ -28,9 +37,19 @@
         /* background: #888; border-radius: 10px; border: 2px solid #f1f1f1; */
     }
 
+    .dark ::-webkit-scrollbar-thumb {
+        background: #293648;
+        border: 1px solid #293648;
+        /* Tailwind's bg-gray-900 */
+    }
+
     ::-webkit-scrollbar-thumb:hover {
         @apply bg-green-700;
         /* background: #555; */
+    }
+
+    .dark ::-webkit-scrollbar-thumb:hover {
+        background: #235132;
     }
 
 
@@ -60,7 +79,7 @@
 
 
     .service-card {
-        @apply bg-white shadow-md rounded-lg p-4 grow-1 text-center hover:transform hover:scale-105 transition-transform duration-300;
+        @apply bg-white dark:bg-gray-900 shadow-md rounded-lg p-4 grow-1 text-center hover:transform hover:scale-105 transition-transform duration-300;
         min-width: 300px;
         animation: popInFromBelow 0.5s ease-out forwards;
     }
@@ -77,19 +96,19 @@
     }
 
     .service-card a {
-        @apply text-green-900 hover:text-green-500 text-xs;
+        @apply text-green-900 dark:text-gray-400 hover:text-green-500 text-xs;
         text-decoration: none;
         animation: popInFromBelow 0.5s ease-out forwards;
     }
 
 
     .principle-container {
-        @apply bg-white rounded-lg flex md:flex-row flex-wrap w-full shadow-md p-2 sm:flex-col;
+        @apply bg-white dark:bg-gray-900 rounded-lg flex md:flex-row flex-wrap w-full shadow-md p-2 sm:flex-col;
         animation: popInFromBelow 0.5s ease-out forwards;
     }
 
     .principle-container div {
-        @apply bg-white p-4 text-center grow-1 lg:max-w-lg;
+        @apply bg-white  dark:bg-gray-900 p-4 text-center grow-1 lg:max-w-lg;
         animation: popInFromBelow 0.5s ease-out forwards;
     }
 
@@ -104,7 +123,7 @@
     }
 
     .principle-container div p {
-        @apply text-gray-700 text-sm text-center;
+        @apply text-gray-700 dark:text-gray-400 text-sm text-center;
         animation: popInFromBelow 0.5s ease-out forwards;
     }
 

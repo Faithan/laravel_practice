@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="bg-white shadow sticky top-0 z-50">
+<nav class="bg-white dark:bg-gray-900 shadow sticky top-0 z-50 dark:border-b-1 dark:border-gray-800">
     <div class="container mx-auto py-3 px-6 flex justify-between items-center">
         <!-- Logo Section -->
         <div class="flex items-center space-x-2">
@@ -22,11 +22,18 @@
             <li><a href="#" class="nav-links">News and Events</a></li>
             <li><a href="#" class="nav-links">Contact</a></li>
             <li><a href="#" class="nav-links">FAQs</a></li>
-            <button id="hoverButton"
-                class="flex items-center space-x-2 px-4 py-2 bg-white text-green-700 rounded hover:bg-green-800 transition duration-300 hover:text-white ">
-                <i id="buttonIcon" class="fa-solid fa-right-to-bracket"></i>
-                <span>Login</span>
-            </button>
+            <li>
+                <button class="nav-links" id="darkModeToggle" onclick="setDarkMode()">
+                    <i id="darkModeIcon" class="fa-solid fa-moon"></i>
+                </button>
+            </li>
+            <li>
+                <button id="hoverButton"
+                    class="flex items-center space-x-2 px-4 py-2 bg-white dark:bg-gray-900 text-green-700 rounded hover:bg-green-800 hover:dark:bg-gray-950 transition duration-300 hover:text-white ">
+                    <i id="buttonIcon" class="fa-solid fa-right-to-bracket"></i>
+                    <span>Login</span>
+                </button>
+            </li>
         </ul>
     </div>
 
@@ -40,10 +47,17 @@
         <li><a href="#" class="nav-links">News and Events</a></li>
         <li><a href="#" class="nav-links">Contact</a></li>
         <li><a href="#" class="nav-links">FAQs</a></li>
-        <button
-            class="flex items-center space-x-2 px-4 py-2 bg-white text-green-700 rounded hover:bg-green-800 transition hover:text-white">
-            <i class="fa-solid fa-right-to-bracket"></i>
-            <span>Login</span>
+        <li>
+            <button class="nav-links" id="darkModeToggleMobile" onclick="setDarkMode()">
+                <i id="darkModeIconMobile" class="fa-solid fa-moon"></i>
+        <li>
+            <button
+                class="flex items-center space-x-2 px-4 py-2 bg-white text-green-700 rounded hover:bg-green-800 transition hover:text-white">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Login</span>
+            </button>
+        </li>
+        <span>Login</span>
         </button>
     </ul>
 </nav>
