@@ -1,9 +1,9 @@
 <!-- Footer -->
 <footer class="bg-black shadow mt-12 py-10">
 
-    <div class="container mx-auto py-6 flex-wap flex flex-row gap-10  px-20 w-full justify-center align-center">
+    <div class="container mx-auto py-6 flex-wap flex flex-rowrap lg:flex-nowrap flex-wrap gap-10  px-20 w-full justify-center align-center">
 
-        <div class="flex flex-col items-center text-justify w-1/2">
+        <div class="flex flex-col items-center text-justify lg:w-1/2 w-96">
             <img src="{{ asset('system_img/sfilogo.png') }}" alt="Serviamus Foundation Logo"
                 class="h-15 mx-auto md:mx-0">
             <p class=" my-3 text-xs text-gray-700">
